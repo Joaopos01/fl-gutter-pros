@@ -5,8 +5,12 @@ import TrustBar from "@/components/TrustBar";
 import ServicesOverview from "@/components/ServicesOverview";
 import BeforeAfterSection from "@/components/BeforeAfterSection";
 import HowItWorks from "@/components/HowItWorks";
+import TransparencyStats from "@/components/TransparencyStats";
+import ServiceShowcase from "@/components/ServiceShowcase";
+import WarrantySection from "@/components/WarrantySection";
 import GoogleReviews from "@/components/GoogleReviews";
 import LeadCapture from "@/components/LeadCapture";
+import InteractiveChat from "@/components/InteractiveChat";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -45,6 +49,15 @@ const Index = () => {
         <section id="how-it-works">
           <HowItWorks />
         </section>
+        <section id="transparency">
+          <TransparencyStats />
+        </section>
+        <section id="showcase">
+          <ServiceShowcase />
+        </section>
+        <section id="warranty">
+          <WarrantySection />
+        </section>
         <section id="reviews">
           <GoogleReviews />
         </section>
@@ -55,6 +68,7 @@ const Index = () => {
           <Footer />
         </section>
       </main>
+      <InteractiveChat />
     </>
   );
 };
