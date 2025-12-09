@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import Header from "@/components/Header";
 import VideoHero from "@/components/VideoHero";
 import TrustBar from "@/components/TrustBar";
 import ServicesOverview from "@/components/ServicesOverview";
@@ -29,15 +30,30 @@ const Index = () => {
         <link rel="canonical" href="https://cleancutgutters.com" />
       </Helmet>
 
+      <Header />
       <main>
-        <VideoHero videoUrl={heroVideoUrl} />
+        <section id="home">
+          <VideoHero videoUrl={heroVideoUrl} />
+        </section>
         <TrustBar />
-        <ServicesOverview />
-        <BeforeAfterSection />
-        <HowItWorks />
-        <GoogleReviews />
-        <LeadCapture />
-        <Footer />
+        <section id="services">
+          <ServicesOverview />
+        </section>
+        <section id="projects">
+          <BeforeAfterSection />
+        </section>
+        <section id="how-it-works">
+          <HowItWorks />
+        </section>
+        <section id="reviews">
+          <GoogleReviews />
+        </section>
+        <section id="contact">
+          <LeadCapture />
+        </section>
+        <section id="about">
+          <Footer />
+        </section>
       </main>
     </>
   );
