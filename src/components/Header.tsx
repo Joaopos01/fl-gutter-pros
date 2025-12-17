@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Menu, X, Phone, Mail } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/logo.png";
 
@@ -21,16 +21,10 @@ const Header = () => {
       {/* Top contact bar */}
       <div className="bg-foreground/80 backdrop-blur-sm text-card py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:9048889778" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">(904) 888-9778</span>
-            </a>
-            <a href="mailto:info@cleancutgutters.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-              <Mail className="h-4 w-4" />
-              <span className="hidden md:inline">info@cleancutgutters.com</span>
-            </a>
-          </div>
+          <a href="tel:9048889778" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <Phone className="h-4 w-4" />
+            <span>(904) 888-9778</span>
+          </a>
           <span className="text-card/70 hidden sm:block">Licensed & Insured • Florida-Based</span>
         </div>
       </div>
