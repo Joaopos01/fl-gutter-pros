@@ -1,5 +1,6 @@
-import { Droplets, Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const footerLinks = [
   { name: "Home", href: "/" },
@@ -20,21 +21,22 @@ const Footer = () => {
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="mb-4 flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <Droplets className="h-5 w-5 text-primary-foreground" />
-              </div>
+            <div className="mb-4 flex items-center gap-3">
+              <img 
+                src={logo} 
+                alt="Clean Cut Gutters Logo" 
+                className="h-12 w-12 rounded-full object-cover"
+              />
               <span className="text-xl font-bold">Clean Cut Gutters</span>
             </div>
+            <h3 className="text-lg font-semibold mb-2">PROFESSIONAL Gutter INSTALLATIONS</h3>
             <p className="mb-6 text-card/70 leading-relaxed">
-              Clean Cut Gutters is a licensed and insured gutter company serving homeowners across Florida.
-              We specialize in seamless gutter installation, repair, cleaning, gutter guards and drainage
-              solutions — always with clean, precise workmanship.
+              Since 2018, Clean Cut Gutters has proudly served homeowners across Florida, delivering expert gutter solutions built on precision, reliability, and care. With years of hands-on experience, our team is equipped to handle every aspect of your gutter installation and maintenance needs.
             </p>
             <div className="space-y-2 text-card/80">
-              <a href="tel:5555555555" className="flex items-center gap-2 hover:text-primary transition-colors">
+              <a href="tel:9048889778" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
-                (555) 555-5555
+                (904) 888-9778
               </a>
               <a href="mailto:info@cleancutgutters.com" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Mail className="h-4 w-4" />
