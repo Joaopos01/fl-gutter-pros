@@ -44,7 +44,7 @@ const BeforeAfterSection = () => {
       <div className="container-narrow mx-auto">
         <div className="mb-12 text-center">
           <h2 className="mb-4 text-3xl font-bold text-foreground md:text-4xl">
-            Our Recent Projects
+            Project Gallery
           </h2>
           <p className="mx-auto max-w-2xl text-muted-foreground">
             Take a look at some of our completed gutter installations across Florida. 

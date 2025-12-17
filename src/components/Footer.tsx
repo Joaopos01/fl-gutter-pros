@@ -1,4 +1,4 @@
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "@/assets/logo.png";
 
@@ -33,14 +33,10 @@ const Footer = () => {
             <p className="mb-6 text-card/70 leading-relaxed">
               Since 2018, Clean Cut Gutters has proudly served homeowners across Florida, delivering expert gutter solutions built on precision, reliability, and care. With years of hands-on experience, our team is equipped to handle every aspect of your gutter installation and maintenance needs.
             </p>
-            <div className="space-y-2 text-card/80">
+            <div className="text-card/80">
               <a href="tel:9048889778" className="flex items-center gap-2 hover:text-primary transition-colors">
                 <Phone className="h-4 w-4" />
                 (904) 888-9778
-              </a>
-              <a href="mailto:info@cleancutgutters.com" className="flex items-center gap-2 hover:text-primary transition-colors">
-                <Mail className="h-4 w-4" />
-                info@cleancutgutters.com
               </a>
             </div>
           </div>
