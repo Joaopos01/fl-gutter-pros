@@ -3,6 +3,7 @@ import project2 from "@/assets/projects/project-2.jpeg";
 import project3 from "@/assets/projects/project-3.jpeg";
 import project4 from "@/assets/projects/project-4.jpeg";
 import project5 from "@/assets/projects/project-5.jpeg";
+import project6 from "@/assets/projects/project-6.jpeg";
 
 const projects = [
   {
@@ -29,6 +30,11 @@ const projects = [
     src: project5,
     alt: "White gutters and downspouts on beige siding",
     title: "New Construction Project",
+  },
+  {
+    src: project6,
+    alt: "White gutters on two-story gray home with garage",
+    title: "Two-Story Home Project",
   },
 ];
 
