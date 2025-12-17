@@ -1,4 +1,4 @@
-import { Droplets } from "lucide-react";
+import logo from "@/assets/logo.jpeg";
 
 interface VideoHeroProps {
   videoUrl?: string;
@@ -32,9 +32,11 @@ const VideoHero = ({ videoUrl }: VideoHeroProps) => {
       {/* Content */}
       <div className="relative z-10 flex h-full flex-col items-center justify-center">
         {/* Logo */}
-        <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-primary shadow-elevated">
-          <Droplets className="h-10 w-10 text-primary-foreground" />
-        </div>
+        <img 
+          src={logo} 
+          alt="Clean Cut Gutters Logo" 
+          className="mb-6 h-32 w-32 rounded-full object-cover shadow-elevated md:h-40 md:w-40"
+        />
 
         {/* Company Name */}
         <h1 className="text-center text-5xl font-bold tracking-tight text-card md:text-7xl">
