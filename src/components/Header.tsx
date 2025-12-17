@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/logo.jpeg";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,9 +22,9 @@ const Header = () => {
       <div className="bg-foreground/80 backdrop-blur-sm text-card py-2 px-4">
         <div className="container mx-auto flex justify-between items-center text-sm">
           <div className="flex items-center gap-6">
-            <a href="tel:5555555555" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:9048889778" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="h-4 w-4" />
-              <span className="hidden sm:inline">(555) 555-5555</span>
+              <span className="hidden sm:inline">(904) 888-9778</span>
             </a>
             <a href="mailto:info@cleancutgutters.com" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="h-4 w-4" />

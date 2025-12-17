@@ -12,31 +12,31 @@ interface StatItem {
 const stats: StatItem[] = [
   {
     icon: TrendingUp,
-    value: 2500,
+    value: 3500,
     suffix: "+",
     label: "Projects Completed",
     description: "Successful installations across Florida",
   },
   {
     icon: Clock,
-    value: 4,
+    value: 3,
     suffix: "h",
     label: "Average Installation",
     description: "Fast, efficient service for most homes",
   },
   {
     icon: ThumbsUp,
-    value: 98,
+    value: 99,
     suffix: "%",
     label: "Client Satisfaction",
     description: "Based on post-service surveys",
   },
   {
     icon: Award,
-    value: 10,
+    value: 7,
     suffix: "+",
     label: "Years Experience",
-    description: "Trusted expertise in Florida",
+    description: "Trusted expertise since 2018",
   },
 ];
 
@@ -133,36 +133,36 @@ const TransparencyStats = () => {
             <div>
               <div className="flex justify-between mb-2">
                 <span className="text-foreground font-medium">On-Time Completion</span>
-                <span className="text-primary font-semibold">96%</span>
+                <span className="text-primary font-semibold">99%</span>
               </div>
               <div className="h-3 bg-muted rounded-full overflow-hidden">
                 <div
                   className="h-full bg-primary rounded-full transition-all duration-1000"
-                  style={{ width: isVisible ? "96%" : "0%" }}
+                  style={{ width: isVisible ? "99%" : "0%" }}
                 />
               </div>
             </div>
             <div>
               <div className="flex justify-between mb-2">
                 <span className="text-foreground font-medium">Customer Referral Rate</span>
-                <span className="text-primary font-semibold">89%</span>
+                <span className="text-primary font-semibold">95%</span>
               </div>
               <div className="h-3 bg-muted rounded-full overflow-hidden">
                 <div
                   className="h-full bg-primary rounded-full transition-all duration-1000 delay-200"
-                  style={{ width: isVisible ? "89%" : "0%" }}
+                  style={{ width: isVisible ? "95%" : "0%" }}
                 />
               </div>
             </div>
             <div>
               <div className="flex justify-between mb-2">
                 <span className="text-foreground font-medium">5-Star Reviews</span>
-                <span className="text-primary font-semibold">94%</span>
+                <span className="text-primary font-semibold">98%</span>
               </div>
               <div className="h-3 bg-muted rounded-full overflow-hidden">
                 <div
                   className="h-full bg-primary rounded-full transition-all duration-1000 delay-300"
-                  style={{ width: isVisible ? "94%" : "0%" }}
+                  style={{ width: isVisible ? "98%" : "0%" }}
                 />
               </div>
             </div>

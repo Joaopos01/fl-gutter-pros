@@ -1,6 +1,5 @@
-import { Shield, ClipboardCheck, Calendar, Wrench, CheckCircle2 } from "lucide-react";
+import { Shield, ClipboardCheck, Wrench, CheckCircle2 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 
 const maintenanceChecklist = [
   "Inspect gutters for debris and blockages",
@@ -21,11 +20,6 @@ const warranties = [
     icon: Wrench,
     title: "Workmanship Guarantee",
     description: "2-year guarantee on installation quality and craftsmanship.",
-  },
-  {
-    icon: Calendar,
-    title: "Annual Cleaning Plan",
-    description: "Subscribe for scheduled cleanings and priority service.",
   },
 ];
 
@@ -58,7 +52,7 @@ const WarrantySection = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 items-start">
+        <div className="max-w-2xl mx-auto">
           <Card className="border-border/50 bg-card">
             <CardHeader>
               <div className="flex items-center gap-3">
@@ -78,39 +72,6 @@ const WarrantySection = () => {
                   </li>
                 ))}
               </ul>
-            </CardContent>
-          </Card>
-
-          <Card className="border-primary/30 bg-primary/5">
-            <CardHeader>
-              <div className="flex items-center gap-3">
-                <Calendar className="w-6 h-6 text-primary" />
-                <CardTitle className="text-xl text-foreground">Annual Cleaning Subscription</CardTitle>
-              </div>
-            </CardHeader>
-            <CardContent className="space-y-4">
-              <p className="text-muted-foreground">
-                Never worry about gutter maintenance again. Our annual subscription includes:
-              </p>
-              <ul className="space-y-2">
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span className="text-foreground">2 scheduled cleanings per year</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span className="text-foreground">Priority emergency service</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span className="text-foreground">10% discount on repairs</span>
-                </li>
-                <li className="flex items-center gap-2">
-                  <CheckCircle2 className="w-4 h-4 text-primary" />
-                  <span className="text-foreground">Seasonal inspection reports</span>
-                </li>
-              </ul>
-              <Button className="w-full mt-4">Learn About Subscription Plans</Button>
             </CardContent>
           </Card>
         </div>
